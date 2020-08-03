@@ -1,0 +1,11 @@
+language: java
+jdk:
+  - oraclejdk14
+
+addons:
+  sonarcloud:
+    organization: dctisdal
+    token: eef95581f33f9cddd3303c19aabdbe14f62b2631
+script: 
+- ant build
+- sonar-scanner
